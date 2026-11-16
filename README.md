@@ -2,7 +2,7 @@
 # My Personal Profile Website
 
 ## About the Project
-This is a personal profile website built using HTML and CSS.
+This is a personal profile website about myself and what i hope to achieve built using HTML and CSS.
 
 ## Pages
 - Home Page
