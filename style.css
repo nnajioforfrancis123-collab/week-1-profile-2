@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: blue;
+    --secondary-color: rgb(84, 84, 119);
+    --background-color: #f1f5f9;
+    --card-color: white;
+    --text-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 60%;
+    object-fit: cover;
+    display: block;
+    margin: 16px auto;
+}
+
+/* Centered container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 25px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation hover */
+.nav-list a:hover {
+    color: #ffd166;
+}
+
+/* Main content */
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero,
+.about-section {
+    display: grid;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+/* Profile link */
+.profile-link {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.profile-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* Responsive layout */
+@media (min-width: 900px) {
+    .hero {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
